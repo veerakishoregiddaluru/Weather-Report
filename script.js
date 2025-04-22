@@ -33,7 +33,7 @@ window.addEventListener("load", () => {
           summary.textContent = data.weather[0].description;
           loc.textContent = data.name + "," + data.sys.country;
           let icon1 = data.weather[0].icon;
-          icon.innerHTML = `<img src="icons/${icon1}.svg" style= 'height:10rem'/>`;
+          icon.innerHTML = `<img src="https://openweathermap.org/img/wn/${icon1}@2x.png" style='height:10rem'/>`;
         });
     });
   }
